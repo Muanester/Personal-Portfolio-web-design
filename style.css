@@ -59,6 +59,7 @@ h6 {
 }
 
 body {
+    position: relative;
     width: 100%;
     height: 100%;
     background-image: url(images/background.jpg);
@@ -86,7 +87,7 @@ body {
         font-size: 10px;
     }
 }
-#navbar:hover,
+
 .animate {
     animation-name: slideOutUp;
     animation-duration: 1s;
@@ -219,9 +220,6 @@ body {
     align-items: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
-#mainnav h2 {
-    font-size: 38px;
-}
 
 @keyframes slideInLeft {
     from {
@@ -237,14 +235,12 @@ body {
 
 #mainnav h2 {
     animation-name: slideInLeft;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-in;
-    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
-    transform: translateX(0);
-    transition: 0.8s;
 }
 
 #about .about-me img {
@@ -447,36 +443,39 @@ body {
 
 /* Testimonial section */
 
+.swiper {
+    height: 450px;
+}
+
 .testimonialsDiv {
     position: relative;
     background: transparent;
-    transform: scale(1);
-    backdrop-filter: blur;
-    overflow: hidden;
     align-items: center;
     justify-content: center;
     border-top: 0px;
 }
 
 .testimonials {
-    width: 2000px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+    padding: 20px;
 }
 
 .testimonial {
     color: white;
-    width: 300px;
-    margin-right: 0px;
+    width: auto;
+    height: 450px;
+    transition: 1s ease;
 }
 
 .testimonial span {
     font-size: 20px;
     font-weight: 600;
+    line-height: 2;
 }
-
-
 
 .testimonialDet {
     background: rgba(0, 0, 0, 0.5);
@@ -493,12 +492,12 @@ body {
 .testimonialDet p span {
     font-size: 30px;
     color: #505153;
+    font-family: 'Lucida Handwriting', ;
 }
 
 .testimonialPic {
     height: 13vh;
     border-radius: 50%;
-    border: 15px solid rgba(49, 49, 49, 0.5);
     align-items: center;
     width: 90px;
     border-radius: 50%;
@@ -513,58 +512,5 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-}
-
-
-@keyframes slideLeft {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-450px);
-    }
-}
-
-.slideAnimate {
-    animation-name: slideLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-delay: 2s;
-    animation-iteration-count: 5;
-    animation-direction: normal;
-    animation-fill-mode: backwards;
-    /* transform: translateX(); */
-    transition: 0.8s;
-}
-
-
-.tests {
-    display: flex;
-    padding: 30px;
-    justify-content: center;
-}
-
-.testimonialDots i {
-    margin: 3px;
-    color: inherit;
-
-}
-
-.testimonialDots i:hover {
-    cursor: pointer;
-}
-
-/* @keyframes dotColor {
-    from {
-        color: initial;
-    }
-
-    to {
-        transform: translateY(5px);
-        color: #11f920
-    }
-} */
-.testActive {
-    color: #11f920;
+    background-size: cover;
 }

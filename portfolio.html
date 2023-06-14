@@ -41,29 +41,141 @@
             <h3>MY WORKS</h3>
 
             <div class="portfolioBtns">
-                <button class="portBtn" onclick="filterObjects('all')">ALL</button>
+                <button class="portBtn portActive" onclick="filterObjects('all')">ALL</button>
                 <button class="portBtn" onclick="filterObjects('app')">APP</button>
                 <button class="portBtn" onclick="filterObjects('card')">CARD</button>
                 <button class="portBtn" onclick="filterObjects('web')">WEB</button>
             </div>
 
             <div class="portObjects">
-                    <div class="portBox web"><img src="images/artem.jpg" alt=""></div>
-                    <div class="portBox card"><img src="images/bench.jpg" alt=""></div>
-                    <div class="portBox app"><img src="images/claudio.jpg" alt=""></div>
-                    <div class="portBox web"><img src="images/ian.jpg" alt=""></div>
-                    <div class="portBox app"><img src="images/joseph.jpg" alt=""></div>
-                    <div class="portBox card"><img src="images/maksim.jpg" alt=""></div>
-                    <div class="portBox web"><img src="images/media.jpg" alt=""></div>
-                    <div class="portBox card"><img src="images/micheile.jpg" alt=""></div>
-                    <div class="portBox app"><img src="images/thought.jpg" alt=""></div>
+                    <div class="portBox web">
+                        <img src="images/artem.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox card">
+                        <img src="images/bench.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox app">
+                        <img src="images/claudio.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox web">
+                        <img src="images/ian.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox app">
+                        <img src="images/joseph.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox card">
+                        <img src="images/maksim.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox web">
+                        <img src="images/media.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox card">
+                        <img src="images/micheile.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox app">
+                        <img src="images/thought.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
             </div>
 
            
         </div>
     </section>
 
-    
+    <section id="portDetails" class="sectionp1">
+        <div class="portDets">
+            <span onclick="closeSection()" class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+            <h4>This is an example of portfolio detail</h4>
+            <div class="portInfos">
+                <swiper-container class="portSwiper" slides-per-view="1" pagination-clickable="true" pagination="true" navigation="false" space-between="50px" autoplay-delay="2000" autoplay-disable-on-interaction="false">
+                    <swiper-slide >
+                        <div class="portPic">
+                            <img src="images/maksim.jpg" alt="">
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="portPic">
+                            <img src="images/media.jpg" alt="">
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="portPic">
+                            <img src="images/thought.jpg" alt="">
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+
+                <div class="portPicDet">
+                    <h4>Project information</h4>
+                    <ul>
+                        <li><strong>Category: </strong> Web Desing</li>
+                        <li><strong>Client: </strong> ABC Compaby</li>
+                        <li><strong>Project Date: </strong> 01-01-2023</li>
+                        <li><strong>Project URL: </strong><span> www.example.com</span></li>
+                    </ul>
+                    <p>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const btnActive = document.querySelectorAll('.portBtn');
+
+        btnActive.forEach(portBtn1 => {
+            portBtn1.addEventListener('click', function() {
+                btnActive.forEach(btn => btn.classList.remove('portActive'));
+                this.classList.add('portActive');
+            });
+        });
+
+    </script>
+
+    <script>
+        var initialContent = '';
+
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            var otherElements = document.getElementsByClassName('sectionp1');
+            
+            // Save the initial content of the section
+            initialContent = section.innerHTML;
+
+            // Hide all other elements
+            for (var i = 0; i < otherElements.length; i++) {
+                otherElements[i].style.display = 'none';
+            }
+
+            // Show the section
+            section.style.display = 'block';
+            }
+
+            function closeSection() {
+            var section = document.getElementById('portDetails');
+            var otherElements = document.getElementsByClassName('sectionp1');
+
+            // Hide the section
+            section.style.display = 'none';
+
+            // Show all other elements
+            for (var i = 0; i < otherElements.length; i++) {
+                otherElements[i].style.display = 'block';
+            }
+
+            // Restore the initial content of the section
+            section.innerHTML = initialContent;
+        }
+
+    </script>
 
     <script>
         filterObjects('all');
@@ -104,6 +216,43 @@
             element.className = arr1.join (' ');
         }
     </script>
+
+    <script>
+        const swiperE2 = document.querySelector('swiper-container');
+    
+    const paramss = {
+      injectStyles: [`
+      .swiper-pagination-bullet {
+        width: 13px;
+        height: 13px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 10px;
+        color: #000;
+        opacity: 1;
+        background: rgba(81, 81, 81, 0.7);
+      }
+
+      .swiper-wrapper {
+        transition: 5s ease;
+    }
+
+      .swiper-pagination-bullet-active {
+        color: #fff;
+        background: #00FF22;
+      }
+      `]}
+
+    Object.assign(swiperE2, paramss);
+    
+    swiperE2.initialize();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
     <script src="script.js"></script>
 </body>
 </html>

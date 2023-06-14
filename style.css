@@ -718,6 +718,7 @@ body {
     transition: 0.3s ease;
 }
 
+.portActive,
 .portBtn:hover {
     background-color: #14ef7a;
 }
@@ -739,24 +740,182 @@ body {
     display: none;
     transition: 0.5s ease-out;
     background-color: rgba(107, 105, 105, 0.2);
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
 }
 
-.portBox img:hover {
-    opacity: 0.5;
-    cursor: pointer;
+.portBox::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: rgba(107, 105, 105, 0.5);
+    opacity: 0;
+    transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.portBox:hover::before {
+    width: 70%;
+    height: 70%;
+    opacity: 1;
+    background-color: rgba(107, 105, 105, 0.5);
+}
+
+.portBox:hover i {
+    z-index: 1;
+    opacity: 1;
 }
 
 .portBox img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.5s ease-in-out;
+    transition: transform 0.3s;
 }
 
+.portBox i {
+    color: white;
+    transform: translateY(-170px);
+    opacity: 0;
+    font-size: 30px;
+    font-weight: 800;
+    z-index: -1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+
+/* Render start */
 .show {
     display: block;
 }
+/* Render stop */
 
+.portBox i:hover {
+    cursor: pointer;
+    color: #68ed68;
+    z-index: 1;
+}
+
+.portBox:hover i {
+    opacity: 1;
+    z-index: 1;
+}
+
+@keyframes slide-up {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scale-up {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+
+
+
+#portDetails {
+    position: relative;
+    display: none;
+}
+
+.portDets {
+    background: rgba(59, 56, 56, 0.3);
+    padding: 30px;
+    animation: scale-up 1s ease-in-out 1s forwards;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+}
+
+.portInfos {
+    display: flex;
+    left: 0;
+    justify-content: space-between;
+}
+
+.portSwiper {
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    height: 500px;
+}
+
+.portPic {
+    height: 450px;
+}
+
+.portPic img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.portPicDet {
+    margin-left: 20px;
+    width: 50%;
+    color: white;
+}
+
+#portDetails h4,
+.portPicDet h4 {
+    font-size: 25px;
+    
+}
+
+.portPicDet ul {
+    margin-top: 20px;
+}
+
+.portPicDet li {
+    list-style: none;
+    line-height: 2;
+}
+
+.portPicDet li span {
+    color: #18d26e;
+}
+
+.portPicDet p {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: rgba(13, 13, 13, 0.5);
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+    margin: 40px 40px;
+}
 
 
 

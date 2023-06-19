@@ -15,21 +15,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    
+
 </head>
 
 <body>
-    <section id="header">
-        <div id="heading-content" class="header-content">
+    <section id="mainNav">
+        <div class="mainNavBar">
+            <h2>Stephen Mutisya</h2>
+            <ul id="navbar" class="marg">
+                <li><a class="thisSec active" href="#" onclick="toggleSection('headingHome')">Home</a></li>
+                <li><a class="thisSec" href="#" onclick="toggleSection('aboutSec')">About</a></li>
+                <li><a class="thisSec" href="#" onclick="toggleSection('resumeSec')">Resume</a></li>
+                <li><a class="thisSec" href="#" onclick="toggleSection('servicesSec')">Services</a></li>
+                <li><a class="thisSec" href="#" onclick="toggleSection('portfolioSec')">Portfolio</a></li>
+                <li><a class="thisSec" href="#" onclick="toggleSection('contactSec')">Contact</a></li>
+            </ul>
+        </div>
+    </section> 
+
+    <section id="headingHome" class="sectionp11">
+        <div class="header-content">
             <h2 class="marg">Stephen Mutisya</h2>
             <h4 class="marg">I am a passionate <span>Software Developer</span> from Nairobi.</h4>
 
             <ul id="navbar" class="marg">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li id="navTag"><a href="about.html">About</a></li>
-                <li id="navTag"><a href="resume.html">Resume</a></li>
-                <li id="navTag"><a href="services.html">Services</a></li>
-                <li id="navTag"><a href="portfolio.html">Portfolio</a></li>
-                <li id="navTag"><a href="contact.html">Contact</a></li>
+                <li><a class="thisSec active" href="#" onclick="toggleSection('headingHome')">Home</a></li>
+                <li><a class="thisSec" href="#" onclick="toggleSection('aboutSec')">About</a></li>
+                <li><a class="thisSec" href="#" onclick="toggleSection('resumeSec')">Resume</a></li>
+                <li><a class="thisSec" href="#" onclick="toggleSection('servicesSec')">Services</a></li>
+                <li><a class="thisSec" href="#" onclick="toggleSection('portfolioSec')">Portfolio</a></li>
+                <li><a class="thisSec" href="#" onclick="toggleSection('contactSec')">Contact</a></li>
         
             </ul>
             <div class="icon marg">
@@ -42,6 +59,836 @@
         </div>
         
     </section>
+
+    <section id="aboutSec" class="sectionp1">
+        <div class="margineffect">
+            <h6>ABOUT</h6>
+            <h3>LEARN MORE ABOUT ME</h3>
+            <div class="about-me sectionm1">
+                <img src="images/dom.jpg" alt="">
+                <div id="about-details">
+                    <h4>Software Developer</h4>
+                    <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em></p>
+                    <div id="about-cont">
+                        <div>
+                            <ul>
+                                <li><i class="fa fa-greater-than"></i><strong>Birthday: </strong><span>1st Jan 1999</span></li>
+                                <li><i class="fa fa-greater-than"></i><strong>Website: </strong><span>www.example.com</span></li>
+                                <li><i class="fa fa-greater-than"></i><strong>Phone: </strong><span>(123) 4567890</span></li>
+                                <li><i class="fa fa-greater-than"></i><strong>City: </strong><span>Nairobi, Kenya</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="fa fa-greater-than"></i><strong>Age: </strong><span>24</span></li>
+                                <li><i class="fa fa-greater-than"></i><strong>Degree: </strong><span>Bachelors</span></li>
+                                <li><i class="fa fa-greater-than"></i><strong>Email: </strong><span>email@example.com</span></li>
+                                <li><i class="fa fa-greater-than"></i><strong>Freelance: </strong><span>Available</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde architecto animi veniam. Amet voluptatibus esse odit ea voluptate, maiores rem eveniet vero fugit? Perferendis, repellat obcaecati. Assumenda nesciunt dolores vitae, iusto sapiente nobis eum impedit soluta et asperiores reiciendis quibusdam aliquam culpa temporibus. Porro doloribus eos eum ad, voluptatem temporibus!</p>
+                </div>
+            </div>
+
+            <div class="counts sectionm1">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="sum">
+                        <span data-purecounter-start="0" data-purecounter-end="323" data-purecounter-once="true" class="purecounter">323</span>
+                        <p>Happy clients</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <div class="sum">
+                        <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-once="true" class="purecounter">50</span>
+                        <p>Projects</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="sum">
+                        <span data-purecounter-start="0" data-purecounter-end="1567" data-purecounter-once="true" class="purecounter">1567</span>
+                        <p>Hours of Support</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="sum">
+                        <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-once="true" class="purecounter">20</span>
+                        <p>Awards</p>
+                    </div>
+                </div>
+            </div>
+
+            <h6>SKILLS</h6>
+            <div class="row sectionm1">
+                <div class="rowcut">
+                    <div class="progress">
+                        <span class="skill">HTML<i class="val">100%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div id="bar1" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">CSS<i class="val">95%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div id="bar2" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">JavaScript<i class="val">80%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div id="bar3" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rowcut">
+                    <div class="progress">
+                        <span class="skill">R<i class="val">70%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div id="bar4" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">Excel<i class="val">95%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div id="bar5" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <span class="skill">SPSS<i class="val">50%</i></span>
+                        <div class="progress-bar-wrap">
+                            <div id="bar6" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <h6>INTERESTS</h6>
+            <div class="interests sectionm1">
+                <div class="interestsRow">
+                    <div class="interestBox">
+                        <i class="fa fa-car green"></i>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                    <div class="interestBox">
+                        <i class="fa fa-book blue"></i>
+                        <p>Dolor Sitema</p>
+                    </div>
+                    <div class="interestBox">
+                        <i class="fa fa-chair yellow"></i>
+                        <p>Sed perspiciatis</p>
+                    </div>
+                    <div class="interestBox">
+                        <i class="fa fa-paint-roller brown"></i>
+                        <p>Magni Dolores</p>
+                    </div>
+                </div>
+                <div class="interestsRow">
+                    <div class="interestBox yellow">
+                        <i class="fa fa-bicycle"></i>
+                        <p>Nemo Enim</p>
+                    </div>
+                    <div class="interestBox">
+                        <i class="fa fa-anchor green"></i>
+                        <p>Eiusmod Tempor</p>
+                    </div>
+                    <div class="interestBox">
+                        <i class="fa fa-music brown"></i>
+                        <p>Midela Teren</p>
+                    </div>
+                    <div class="interestBox">
+                        <i class="fa fa-compact-disc maron"></i>
+                        <p>Pira Neve</p>
+                    </div>
+                </div>
+                <div class="interestsRow">
+                    <div class="interestBox">
+                        <i class="fa fa-network-wired blue"></i>
+                        <p>Dirada Pack</p>
+                    </div>
+                    <div class="interestBox">
+                        <i class="fa fa-wifi yellow"></i>
+                        <p>Moton Ideal</p>
+                    </div>
+                    <div class="interestBox">
+                        <i class="fa fa-laptop brown"></i>
+                        <p>Verdo Park</p>
+                    </div>
+                    <div class="interestBox">
+                        <i class="fa fa-fingerprint green"></i>
+                        <p>Flavor Nivelanda</p>
+                    </div>
+                </div>
+            </div>
+
+            <h6>TESTIMONIALS</h6>
+            <div class="testimonialsDiv sectionm1">                    
+                  
+                <swiper-container class="testimonials" init="false" slides-per-view="3" pagination-clickable="true" pagination="true" navigation="false" space-between="50px" autoplay-delay="2000" autoplay-disable-on-interaction="false">
+                
+                    <swiper-slide>
+                        <div class="testimonial">
+                            <div class="testimonialDet">
+                                <p><em><i class="fa fa-quote-left"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium provident repellendus accusantium dolorum laborum sint quisquam eveniet totam, porro omnis illum quaerat unde reprehenderit nulla repellat quia! Aperiam, debitis?<i class="fa fa-quote-right"></i></em></p>
+                            </div>
+                            <div class="testimonialPic">
+                                <img src="images/tech.jpg" alt="">
+                            </div>
+                            <span>Soul Goodman</span>
+                            <p>Ceo & Founder</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="testimonial">
+                            <div class="testimonialDet">
+                                <p><em><i class="fa fa-quote-left"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium provident repellendus accusantium dolorum laborum sint quisquam eveniet totam, porro omnis illum quaerat unde reprehenderit nulla repellat quia! Aperiam, debitis?<i class="fa fa-quote-right"></i></em></p>
+                            </div>
+                            <div class="testimonialPic">
+                                <img src="images/dom.jpg" alt="">
+                            </div>
+                            <span>Stephen Godwil</span>
+                            <p>Enterpreneur</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="testimonial">
+                            <div class="testimonialDet">
+                                <p><em><i class="fa fa-quote-left"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium provident repellendus accusantium dolorum laborum sint quisquam eveniet totam, porro omnis illum quaerat unde reprehenderit nulla repellat quia! Aperiam, debitis?<i class="fa fa-quote-right"></i></em></p>
+                            </div>
+                            <div class="testimonialPic">
+                                <img src="images/tech.jpg" alt="">
+                            </div>
+                            <span>Angel Psych</span>
+                            <p>Manager</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="testimonial">
+                            <div class="testimonialDet">
+                                <p><em><i class="fa fa-quote-left"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium provident repellendus accusantium dolorum laborum sint quisquam eveniet totam, porro omnis illum quaerat unde reprehenderit nulla repellat quia! Aperiam, debitis?<i class="fa fa-quote-right"></i></em></p>
+                            </div>
+                            <div class="testimonialPic">
+                                <img src="images/dom.jpg" alt="">
+                            </div>
+                            <span>Eriksen Don</span>
+                            <p>Founder</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="testimonial">
+                            <div class="testimonialDet">
+                                <p><em><i class="fa fa-quote-left"></i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore laudantium provident repellendus accusantium dolorum laborum sint quisquam eveniet totam, porro omnis illum quaerat unde reprehenderit nulla repellat quia! Aperiam, debitis?<i class="fa fa-quote-right"></i></em></p>
+                            </div>
+                            <div class="testimonialPic">
+                                <img src="images/tech.jpg" alt="">
+                            </div>
+                            <span>Sah Sha</span>
+                            <p>Ceo</p>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>           
+        </div>
+    </section>
+
+    <section id="resumeSec" class="sectionp1">
+        <div class="margineffect">
+            <h6>RESUME</h6>
+            <h3>CHECK MY RESUME</h3>
+
+
+            <div class="resume">
+                <div class="resumeCol">
+                    <div class="summary">
+                        <h4>Summary</h4>
+                        <div class="lineLeft">
+                            <div class="resumeDet">
+                                <h5>ALICE BARKLEY</h5>
+                                <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+                                <ul>
+                                    <li>Portland par 127,Orlando, FL</li>
+                                    <li>(123) 456-7891</li>
+                                    <li>alice.barkley@example.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary">
+                        <h4>Education</h4>
+                        <div class="lineLeft">
+                            <div class="resumeDet">
+                                <h5>MASTER OF FINE ARTS & GRAPHIC DESIGN</h5>
+                                <div class="year">
+                                    <span>2019 - Present</span>
+                                </div>
+                                <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+                                <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+                            </div>
+                            <div class="resumeDet">
+                                <h5>BACHELOR OF FINE ARTS & GRAPHIC DESIGN</h5>
+                                <div class="year">
+                                    <span>2019 - Present</span>
+                                </div>
+                                <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+                                <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resumeCol">
+                    <div class="summary">
+                        <h4>Professional Experience</h4>
+                        <div class="lineLeft">
+                            <div class="resumeDet">
+                                <h5>SENIOR GRAPHIC DESIGN SPECIALIST</h5>
+                                <div class="year">
+                                    <span>2019 - Present</span>
+                                </div>
+                                <p><em>Experion, New York, NY</em></p>
+                                <ul>
+                                    <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                                    <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.</li>
+                                    <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                                    <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                                </ul>
+                            </div>
+                            <div class="resumeDet">
+                                <h5>GRAPHIC DESIGN SPECIALIST</h5>
+                                <div class="year">
+                                    <span>2017 - 2018</span>
+                                </div>
+                                <p><em>Stepping Stone Advertising, New York, NY</em></p>
+                                <ul>
+                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <section id="servicesSec" class="sectionp1">
+        <div class="margineffect">
+            <h6>SERVICES</h6>
+            <h3>MY SERVICES</h3>
+
+            <div class="services">
+                <div class="serviceRow">
+                    <div class="service">
+                        <div class="serviceIcon">
+                            <i class="fa fa-globe icon1"></i>
+                            <i class="fa fa-globe icon2"></i>
+                        </div>
+                        <h4>Lorem Ipsum</h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                    <div class="service">
+                        <div class="serviceIcon">
+                            <i class="fa fa-clock icon1"></i>
+                            <i class="fa fa-clock icon2"></i>
+                        </div>
+                        <h4>Sed ut perspiciatis</h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                    <div class="service">
+                        <div class="serviceIcon">
+                            <i class="fa fa-chess icon1"></i>
+                            <i class="fa fa-chess icon2"></i>
+                        </div>
+                        <h4>Magni Dolores</h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                </div>
+                <div class="serviceRow">
+                    <div class="service">
+                        <div class="serviceIcon">
+                            <i class="fa fa-reply icon1"></i>
+                            <i class="fa fa-reply icon2"></i>
+                        </div>
+                        <h4>Nemo Enim</h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                    <div class="service">
+                        <div class="serviceIcon">
+                            <i class="fa fa-calendar icon1"></i>
+                            <i class="fa fa-calendar icon2"></i>
+                        </div>
+                        <h4>Dele cardo</h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                    <div class="service">
+                        <div class="serviceIcon">
+                            <i class="fa fa-bars icon1"></i>
+                            <i class="fa fa-bars icon2"></i>
+                        </div>
+                        <h4>Divera don</h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <section id="portfolioSec" class="sectionp1 sectionp12">
+        <div class="margineffect">
+            <h6>PORTFOLIO</h6>
+            <h3>MY WORKS</h3>
+
+            <div class="portfolioBtns">
+                <button class="portBtn portActive" onclick="filterObjects('all')">ALL</button>
+                <button class="portBtn" onclick="filterObjects('app')">APP</button>
+                <button class="portBtn" onclick="filterObjects('card')">CARD</button>
+                <button class="portBtn" onclick="filterObjects('web')">WEB</button>
+            </div>
+
+            <div class="portObjects">
+                    <div class="portBox web">
+                        <img src="images/artem.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox card">
+                        <img src="images/bench.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox app">
+                        <img src="images/claudio.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox web">
+                        <img src="images/ian.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox app">
+                        <img src="images/joseph.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox card">
+                        <img src="images/maksim.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox web">
+                        <img src="images/media.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox card">
+                        <img src="images/micheile.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+                    <div class="portBox app">
+                        <img src="images/thought.jpg" alt="">
+                        <a href="#" onclick="toggleSection('portDetails')"><i class="fa fa-link"></i></a>
+                    </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+    <section id="portDetails" class="sectionp1">
+        <div class="portDets">
+            <span onclick="closeSection()" class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+            <h4>This is an example of portfolio detail</h4>
+            <div class="portInfos">
+                <swiper-container class="portSwiper" slides-per-view="1" pagination-clickable="true" pagination="true" navigation="false" space-between="50px" autoplay-delay="2000" autoplay-disable-on-interaction="false">
+                    <swiper-slide >
+                        <div class="portPic">
+                            <img src="images/maksim.jpg" alt="">
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="portPic">
+                            <img src="images/media.jpg" alt="">
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="portPic">
+                            <img src="images/thought.jpg" alt="">
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+
+                <div class="portPicDet">
+                    <h4>Project information</h4>
+                    <ul>
+                        <li><strong>Category: </strong> Web Desing</li>
+                        <li><strong>Client: </strong> ABC Compaby</li>
+                        <li><strong>Project Date: </strong> 01-01-2023</li>
+                        <li><strong>Project URL: </strong><span> www.example.com</span></li>
+                    </ul>
+                    <p>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactSec" class="sectionp1">
+        <div class="margineffect">
+            <h6>CONTACT</h6>
+            <h3>CONTACT ME</h3>
+
+            <div class="contactRow">
+                <div class="contact">
+                    <span>
+                        <i class="fa fa-location-dot"></i>
+                    </span>
+                    <div class="contactDet">
+                        <h4>My Address</h4>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <span>
+                        <i class="fa fa-share-nodes"></i>
+                    </span>
+                    <div class="contactDet">
+                        <h4>Social Profiles</h4>
+                        <ul>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-skype"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contactRow">
+                <div class="contact">
+                    <span>
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                    <div class="contactDet">
+                        <h4>Email Me</h4>
+                        <p>contact@example.com</p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <span>
+                        <i class="fa fa-phone-volume"></i>
+                    </span>
+                    <div class="contactDet">
+                        <h4>Call Me</h4>
+                        <p>+1 234 567890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form">
+                <form action="">
+                    <div class="nameEmail">
+                        <input type="text" placeholder="Your Name">
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                    <div class="formButton">
+                        <button>Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+           
+        </div>
+    </section>
+
+
+
+    <!-- Filter Buttons -->
+    <script>
+        const btnActive = document.querySelectorAll('.portBtn');
+
+        btnActive.forEach(portBtn1 => {
+            portBtn1.addEventListener('click', function() {
+                btnActive.forEach(btn => btn.classList.remove('portActive'));
+                this.classList.add('portActive');
+            });
+        });
+
+    </script>
+
+    <!-- Active Section -->
+    <script>
+        const activeSec = document.querySelectorAll('.thisSec');
+
+        activeSec.forEach(secAct => {
+            secAct.addEventListener('click', function() {
+                activeSec.forEach(sect => sect.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+    </script>
+<!-- <script>
+    $(document).ready(function() {
+        $('.thisSec').click(function() {
+          $('.thisSec').removeClass('active'); // Remove "active" class from all sections
+          $(this).addClass('active'); // Add "active" class to the clicked section
+        });
+      });
+    </script> -->
+
+
+    <!-- <script>
+        function toggleSection(sectionId) {
+          // Remove "active" class from all list items
+          const items = document.getElementsByClassName("thisSec");
+          for (let i = 0; i < items.length; i++) {
+            items[i].classList.remove("active");
+          }
+      
+          // Add "active" class to the clicked list item
+          const clickedItem = document.getElementById(sectionId);
+          clickedItem.classList.add("active");
+        }
+      </script> -->
+
+
+    <!-- Toggle Section Details & Body Sections Page -->
+    <script>
+        toggleSection ('headingHome');
+        
+
+        var initialContent = '';
+
+        function toggleSection(sectionId) {
+
+            const mainNav = document.getElementById('mainNav');
+            const headingHome = document.getElementById('headingHome');
+
+
+            var section = document.getElementById(sectionId);
+            var otherElements = document.getElementsByClassName('sectionp1');
+            var homeNav = document.getElementsByClassName('sectionp11');
+
+            
+            // Save the initial content of the section
+            initialContent = section.innerHTML;
+
+            // Hide all other elements
+            for (var i = 0; i < otherElements.length; i++) {
+                otherElements[i].style.display = 'none';
+            }
+
+            for (var i = 0; i < homeNav.length; i++) {
+                homeNav[i].style.display = 'none';
+            }
+
+            // Show the section
+            section.style.display = 'block';
+
+            if (sectionId === 'headingHome') {
+                mainNav.style.display = 'none'; // Hide 'N' section
+                headingHome.style.display = 'block'; // Show 'headingHome' section
+            } else {
+                mainNav.style.display = 'block'; // Show 'N' section for other sections
+                headingHome.style.display = 'none'; // Hide 'headingHome' section for other sections
+            };
+
+            // Add 'active' class to clicked section and remove from others
+            // for (var i = 0; i < otherElements.length; i++) {
+            //         if (otherElements[i].id === sectionId) {
+            //             otherElements[i].classList.add('active'); // Add 'active' class to clicked section
+            //         } else {
+            //             otherElements[i].classList.remove('active'); // Remove 'active' class from other sections
+            //         }
+            //     }
+        }
+
+        
+
+            function closeSection() {
+            var section = document.getElementById('portDetails');
+            var otherElements = document.getElementsByClassName('sectionp12');
+
+            // Hide the section
+            section.style.display = 'none';
+
+            // Show all other elements
+            for (var i = 0; i < otherElements.length; i++) {
+                otherElements[i].style.display = 'block';
+            }
+
+            // Restore the initial content of the section
+            section.innerHTML = initialContent;
+            }
+
+            //Toggle the display of the clicked section
+            if (section.style.display === 'none') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+                }
+
+    </script>
+
+    <!-- Filter Section Details -->
+    <script>
+        filterObjects('all');
+
+        function filterObjects (c) {
+            var x, i;
+            x = document.getElementsByClassName('portBox');
+            if (c == 'all') c = '';
+            for (i = 0; i < x.length; i++) {
+                removeClass(x[i], 'show');
+                if (x[i].className.indexOf(c) > -1) addClass(x[i], 'show')
+            }
+        }
+
+        function addClass (element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split (' ');
+            arr2 = name.split (' ');
+
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += ' ' + arr2[i];
+                }
+            }
+        }
+
+        function removeClass (element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split (' ');
+            arr2 = name.split (' ');
+
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice (arr1.indexOf(arr2[i]), 1);
+                }
+            }
+
+            element.className = arr1.join (' ');
+        }
+    </script>
+
+    <!-- Inject Swiper Container Section Details  -->
+    <script>
+        const swiperE2 = document.querySelector('swiper-container');
+    
+        const paramss = {
+        injectStyles: [`
+        .swiper-pagination-bullet {
+            width: 13px;
+            height: 13px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 10px;
+            color: #000;
+            opacity: 1;
+            background: rgba(81, 81, 81, 0.7);
+        }
+
+        .swiper-wrapper {
+            transition: 5s ease;
+        }
+
+        .swiper-pagination-bullet-active {
+            color: #fff;
+            background: #00FF22;
+        }
+        `]}
+
+        Object.assign(swiperE2, paramss);
+        
+        swiperE2.initialize();
+    </script>
+
+    <!-- Animate Progress Bars -->
+    <script>
+        $(document).ready(function(barSelector, targetWidth, duration) {
+            var annimateOccur = false;
+
+            $(document).scroll(function() {
+                if (!annimateOccur) {
+                    function animateProgressBar(barSelector, targetWidth, duration) {
+                    var progressBar = $(barSelector);
+                    progressBar.stop().animate({width: targetWidth + '%' }, duration);
+                    }
+
+                    animateProgressBar('#bar1', 100, 2000);
+                    animateProgressBar('#bar2', 95, 2000);
+                    animateProgressBar('#bar3', 80, 2000);
+                    animateProgressBar('#bar4', 70, 2000);
+                    animateProgressBar('#bar5', 95, 2000);
+                    animateProgressBar('#bar6', 50, 2000);
+
+                    annimateOccur = true;
+                    }
+            });        
+    });
+    </script>  
+
+    <!-- Inject Swiper Container About Section -->
+    <script>
+        const swiperEl = document.querySelector('swiper-container');
+    
+        const params = {
+          injectStyles: [`
+          .swiper-pagination-bullet {
+            width: 13px;
+            height: 13px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 10px;
+            color: #000;
+            opacity: 1;
+            background: rgba(81, 81, 81, 0.7);
+          }
+
+          .swiper-wrapper {
+            transition: 5s ease;
+        }
+    
+          .swiper-pagination-bullet-active {
+            color: #fff;
+            background: #00FF22;
+          }
+          `],
+        //   pagination: {
+        //     clickable: true,
+        //     renderBullet: function (index, className) {
+        //       return '<span class="' + className + '">' + (index + 1) + "</span>";
+        //     },
+        //   },
+        }
+    
+        Object.assign(swiperEl, params)
+    
+        swiperEl.initialize();
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script>new PureCounter();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2157b09d4f.js" crossorigin="anonymous"></script>
+
 
     <script src="script.js"></script>
 </body>

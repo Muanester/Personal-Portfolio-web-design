@@ -5,14 +5,14 @@ new ProgressBar();
 
 new PureCounter();
 
-var clickNav = document.getElementById('navTag');
-const heading = document.getElementById('header');
+// var clickNav = document.getElementById('navTag');
+// const heading = document.getElementById('header');
 
-if (clickNav) {
-    clickNav.addEventListener('click', () => {
-        heading.classList.add('animate');
-    })
-}
+// if (clickNav) {
+//     clickNav.addEventListener('click', () => {
+//         heading.classList.add('animate');
+//     })
+// }
 
 
 

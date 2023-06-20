@@ -101,7 +101,7 @@ body {
     height: 100%;
     background-image: url(images/background.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -299,6 +299,9 @@ body {
     justify-content: space-between;
 }
 
+
+/* About Section */
+
 .about-me img {
     width: 25%;
     height: 100%;
@@ -371,7 +374,7 @@ body {
 }
 .sum p {
     color: white;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .box i {
@@ -382,7 +385,7 @@ body {
     background-color: rgba(7, 7, 7, 0.6);
 }
 
-.icon {
+.box .icon {
     text-align: center;
     transform: translateY(25px);
 }
@@ -880,7 +883,7 @@ body {
 .portDets {
     background: rgba(59, 56, 56, 0.3);
     padding: 30px;
-    animation: scale-up 1s ease-in-out 1s forwards;
+    animation: scale-up 0s ease-in-out 0s forwards;
     opacity: 1;
     top: 50%;
     left: 50%;
